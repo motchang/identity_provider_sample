@@ -4,8 +4,17 @@ AllCops:
 Rails:
   Enabled: true
 
+Metrics/BlockLength:
+  Exclude:
+    - 'lib/**/*'
+    - 'tasks/**/*'
+
 Metrics/LineLength:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
+
+Style/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table

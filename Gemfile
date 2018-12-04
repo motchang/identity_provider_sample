@@ -20,6 +20,8 @@ gem 'webpacker'
 
 gem 'bootsnap', require: false
 
+gem 'devise'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
@@ -28,6 +30,10 @@ group :development do
   gem 'factory_bot'
   gem 'listen'
   gem 'web-console'
+
+  gem 'annotate', git: 'https://github.com/ctran/annotate_models.git', branch: 'develop'
+
+  gem 'rubocop'
 end
 
 group :test do
